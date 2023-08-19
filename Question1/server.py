@@ -20,7 +20,7 @@ btoken = x.json()['access_token']
 
 
 API_URL = "http://20.244.56.144/train/trains"
-BEARER_TOKEN = btoken
+BEARER_TOKEN = btok
 @app.route('/trains', methods=['GET'])
 def get_train_schedule():
     headers = {
