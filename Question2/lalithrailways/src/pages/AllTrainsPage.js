@@ -6,7 +6,7 @@ function AllTrainsPage() {
 
   useEffect(() => {
     // Fetch data from backend API and set it to the 'trains' state
-   data =  fetch('http://20.244.56.144/train/trains').then(response => response.json()).then(data => setTrains(data));
+   fetch('http://20.244.56.144/train/trains').then(response => response.json()).then(data => setTrains(data));
   }, []);
 
   return (

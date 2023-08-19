@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 function SingleTrainPage() {
   const { trainNumber } = useParams();
-  data = fetch(`http://20.244.56.144/train/trains/${trainNumber}`).then(response => response.json());
+  fetch(`http://20.244.56.144/train/trains/${trainNumber}`).then(response => response.json());
 
   // Render train details using fetched data
   return (
